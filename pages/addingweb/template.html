@@ -1,0 +1,41 @@
+<div class="contain">
+    <div>
+        <table id="customers">
+          <th>ID</th>
+          <th>Name</th>
+          <th>Salary</th>
+          <th>age</th>
+          <th>Update</th>
+          <th>Delete</th>
+          <tr v-for="(abc,index) in data.data" :key="index" v-if="index <10 ">
+            <td>{{abc.id}}</td>
+            <td>{{abc.employee_name}}</td>
+            <td>{{abc.employee_salary}}</td>
+            <td>{{abc.employee_age}}</td>
+            <td><button @click="Form_Update(index)">Update</button></td>
+            <td><button @click="Form_delete(index)">Delete</button></td>
+          </tr>
+        </table>
+        <div class="pop1" v-if="form_pop1">
+          <div class="pop2">
+            Name: <input type="text" v-model="Form_newObj.name_em"><br> <br>
+            Salary: <input type="text" v-model="Form_newObj.salary_em"><br> <br>
+            Age: <input type="text" v-model="Form_newObj.age_em"><br> <br>
+            <button @click="addOkay">Okay</button>
+            <button @click="cencel">Cencel</button>
+          </div>
+        </div>
+    
+      <div class="pop1" v-if="form_pop2">
+          <div class="pop2">
+            Name: <input type="text" v-model="Form_newObj.name_em"><br><br>
+            Salary: <input type="text" v-model="Form_newObj.salary_em"><br><br>
+            Age: <input type="text" v-model="Form_newObj.age_em"><br><br>
+            <button @click="form_update">Update</button>
+            <button @click="form_close">Close</button>
+          </div>
+      </div>
+    
+        <button @click="show">show pop up</button>
+      </div>
+</div>   

@@ -1,0 +1,58 @@
+<div class="head">
+    <div class="con">
+            <div>
+                    <div class="lefthead">
+                            <b style="color:blueviolet">Docs</b> » Callbacks Promises Events <br><br>
+                            <!-- <i class="fas fa-align-justify"></i> -->
+                        </div>
+                        <div class="righthead">
+                            <a href=""> Edit on GitHub </a>
+                        </div>
+               </div> <br> <br>
+                <hr>
+        <div>
+            <h2>Callbacks Promises Events</h2>
+            <p>To help web3 integrate into all kind of projects with different standards we provide multiple ways to act
+                on asynchronous functions.</p>
+            <p>Most web3.js objects allow a callback as the last parameter, as well as returning promises to chain
+                functions.</p>
+            <p>Ethereum as a blockchain has different levels of finality and therefore needs to return multiple “stages”
+                of an action. To cope with requirement we return a “promiEvent” for functions like
+                <span class="bor">web3.eth.sendTransaction</span> or contract methods. This “promiEvent” is a promise
+                combined with an event emitter to allow acting on different stages of action on the blockchain, like a
+                transaction.
+            </p>
+            <p>PromiEvents work like a normal promises with added
+                <span class="bor"> on</span> , <span class="bor"> once </span> and <span
+                    class="bor">off</span>functions. This way developers can watch for additional events like on
+                “receipt” or “transactionHash”.
+            </p>
+
+            <div class="green">
+                web3.eth.sendTransaction({from: <span class="colorblue">'0x123...' ,</span>, data:
+                <span class="colorgreen">'0x432...'</span> })
+                <p>.once( <span class="colorblue">'transactionHash'</span>, <span
+                        class="colorgreen">function</span>(hash){ ... })</p>
+                <p>.once( <span class="colorblue">'receipt'</span>, <span class="colorgreen">function</span>(receipt){
+                    ... })</p>
+                <p>.on( <span class="colorblue">'confirmation'</span>, <span
+                        class="colorgreen">function</span>(confNumber, receipt){ ... })</p>
+                <p>.on( <span class="colorblue">'error'</span>, <span class="colorgreen">function</span>(error){..})</p>
+                <p>.then(<span class="colorgreen">function</span>(receipt){
+                    <span class="colorblue">// will be fired once the receipt is mined</span>
+                    });</p>
+            </div> <br>
+            <div class="btn_footer">
+                <div class="btn_Pre1">Previous</div>
+                <div class="btn_Pre">Next</div>
+            </div>
+        </div><br><br><br>
+        <hr>
+        <div style="text-align: center">
+            <p>© Copyright 2016, Ethereum Revision 2022b17d.</p>
+            <p>Built with <span class="colorblue">Sphinx</span> using a <span class="colorblue">theme</span> provided by
+                <span class="colorblue">Read the Docs</span>.</p>
+
+        </div>
+    </div>
+</div>

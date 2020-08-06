@@ -1,0 +1,100 @@
+.head{
+    padding: 15px;
+    overflow-y: scroll;
+    max-height: 100vh;
+}
+.righthead{
+    float: right;
+}
+.lefthead{
+    float: left;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+    color: green;
+    text-shadow: 1px 1px 4px rgb(165, 204, 165);
+}
+.con{
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px 0px gray;
+}
+.bor{
+    white-space: nowrap;
+    max-width: 100%;
+    background: #fff;
+    border: solid 1px #e1e4e5;
+    font-size: 75%;
+    padding: 0 5px;
+    font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",Courier,monospace;
+    color: #E74C3C;
+    overflow-x: auto;
+}
+.green{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    background-color: 	rgb(247, 244, 223);
+    border-radius: 5px;
+}
+.colorblue{
+    color: #408090;
+    font-style: italic;
+}
+.colorgreen{
+    color:rgb(0, 112, 32);}
+.btn_Pre1{
+    width: 100px;
+    text-align: center;
+    color: white;
+    background: rgb(189, 178, 178);
+    padding: 10px;
+    float: left;
+    border-radius: 10px;
+}
+.btn_Pre1:hover{
+    width: 100px;
+    text-align: center;
+    color: white;
+    background: rgb(112, 108, 108);
+    padding: 10px;
+    float: left;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px 0px gray;
+}
+.btn_Pre{
+    width: 100px;
+    text-align: center;
+    color: white;
+    background: rgb(189, 178, 178);
+    padding: 10px;
+    float: right;
+    border-radius: 10px;
+}
+.btn_Pre:hover{
+    width: 100px;
+    text-align: center;
+    color: white;
+    background: rgb(112, 108, 108);
+    padding: 10px;
+    float: right;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px 0px gray;
+}
+.btn_footer{
+    width: 100%;
+    height: auto;
+}
+hr{
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc);
+    background-image: -moz-linear-gradient(left, #ccc, #333, #ccc);
+    background-image: -ms-linear-gradient(left, #ccc, #333, #ccc);
+    background-image: -o-linear-gradient(left, #ccc, #333, #ccc);
+    }

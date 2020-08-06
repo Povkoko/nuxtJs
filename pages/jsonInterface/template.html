@@ -1,0 +1,60 @@
+<div class="head">
+    <div class="con">
+        <div>
+            <div class="lefthead">
+                <b style="color:blueviolet">Docs</b> » Glossary <br><br>
+                <!-- <i class="fas fa-align-justify"></i> -->
+            </div>
+            <div class="righthead">
+                <a href=""> Edit on GitHub </a>
+            </div>
+        </div> <br> <br>
+        <hr>
+        
+        <h2>Glossary</h2> <hr>
+        <div>
+            <h2>json interface</h2>
+            <p>The json interface is a json object describing the <span class="colorblue">Application Binary Interface (ABI)</span> for an Ethereum smart contract.</p>
+            <p>Using this json interface web3.js is able to create JavaScript object representing the smart contract and its methods and events using the <span class="colorblue">web3.eth.Contract object.</span></p>
+            <h3>Specification</h3>
+            <p>Functions:</p>
+            <ul>
+                <li>The <span class="bor">web3-eth</span> is for the ethereum blockchain and smart contracts</li>
+                <li>The <span class="bor">web3-shh</span> is for the whisper protocol to communicate p2p and broadcast
+                </li>
+                <li>The <span class="bor">web3-bzz</span> is for the swarm protocol, the decentralized file storage</li>
+                <li>The <span class="bor">web3-utils</span> contains useful helper functions for Dapp developers.</li>
+            </ul>
+            <h2>Adding web3.js</h2>
+            <p>First you need to get web3.js into your project. This can be done using the following methods:</p>
+            <ul>
+                <li>npm : <span class="bor">npm install web3</span></li>
+                <li>meteor <span class="bor">meteor add ethereum:web3</span></li>
+                <li>pure js: link the <span class="bor">dist/web3.min.js</span></li>
+            </ul>
+            <p>
+                After that you need to create a web3 instance and set a provider. Ethereum supported Browsers like Mist
+                or MetaMask will have a <span class="bor">ethereumProvider</span> or
+                <span class="bor">web3.currentProvider</span> available. For web3.js, check <span
+                    class="bor">Web3.givenProvider</span>. If this property is <span class="bor">null</span> you should
+                connect to a remote/local node.
+            </p>
+            <div class="green">
+                <span class="colorblue">// in node.js use: var web3 = require('web3');</span> <br><br>
+                <span class="colorgreen">var </span> web3 = <span class="colorgreen"> new</span> Web3(Web3.givenProvider
+                ||<span class="colorblue">"ws://localhost:8546"</span> );
+            </div>
+            <p>That’s it! now you can use the <span class="bor">web3</span> object.</p>
+            <div class="btn_footer">
+                <div class="btn_Pre1" > Previous </div>
+                <div class="btn_Pre"> Next </div>
+            </div>
+        </div><br><br><br>
+        <hr>
+        <div style="text-align: center">
+            <p>© Copyright 2016, Ethereum Revision 2022b17d.</p>
+            <p>Built with <span class="colorblue">Sphinx</span> using a <span class="colorblue">theme</span> provided by
+                <span class="colorblue">Read the Docs</span>.</p>
+        </div>
+    </div>
+</div>
